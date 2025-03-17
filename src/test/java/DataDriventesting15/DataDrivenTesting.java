@@ -6,6 +6,6 @@ import org.testng.annotations.Test;
    @Test
     public void DDtest() {
 
-       System.out.println("Data Driven Testing praveen");
+       System.out.println("Data Driven Testing ");
     }
 }
