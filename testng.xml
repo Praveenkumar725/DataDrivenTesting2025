@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/DELL/IdeaProjects/DataDrivenTesting2025">
+<suite name="All Test Suite" parallel="methods" thread-count="4">
+    <test verbose="2" preserve-order="true" name="C:/Automation Testing/GitHub/DataDrivenTesting2025">
         <classes>
-            <class name="DataDriventesting15.DataDrivenTesting">
+            <class name="DataDriventesting15.DDbyusingDproviderTest">
+                <methods>
+                    <include name="VerizonProductSearch"/>
+                </methods>
+            </class>
+            <class name="DataDriventesting15.DataDrivenTests">
                 <methods>
                     <include name="DDtest"/>
+                </methods>
+            </class>
+            <class name="DataDriventesting15.Parameterization">
+                <methods>
+                    <include name="Parameterization"/>
                 </methods>
             </class>
         </classes>
